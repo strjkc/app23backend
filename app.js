@@ -14,6 +14,7 @@ mongoose.connect(config.MONGO_URL, { useNewUrlParser: true, useUnifiedTopology: 
 
 app.use(cors())
 app.use(express.json())
+app.use(express.static("build"))
 app.use('/api/entrys', entryRouter)
 app.use('/api/totals', totalsRouter)
 
