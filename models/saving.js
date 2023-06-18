@@ -6,11 +6,11 @@ const savingSchema = mongoose.Schema({
     required: true
   },
   totalSaved: {
-    type: String,
+    type: Number,
     required: true
   },
   percentToSave: {
-    type: String,
+    type: Number,
     required: true
   }
 })
@@ -23,4 +23,4 @@ savingSchema.set('toJSON', {
   }
 })
 
-module.exports = mongoose.model('entry', savingSchema)
+module.exports = mongoose.model('saving', savingSchema)
