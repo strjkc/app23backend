@@ -20,7 +20,7 @@ const calculateSavings = async (entry) => {
     const availableAmount = await getAvailableAmount()
     const newSavings = {percentToSave: savings.percentToSave, totalSaved: savings.totalSaved, currentSaving: availableAmount * savings.percentToSave}
     console.log("New savings: ", newSavings)
-    const savedObject = Saving.findOneAndUpdate({}, newSavings, {new: true})
+    const savedObject = await Saving.findOneAndUpdate({}, newSavings, {new: true})
     return savedObject
   }
 
