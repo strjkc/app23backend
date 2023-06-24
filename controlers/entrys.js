@@ -10,6 +10,7 @@ const Saving = require('../models/saving')
 
 
 const calculateSavings = async (entry) => {
+  console.log("Controler/Entrys: CalculateSavings is called")
   
   //apply to savings calc if needed
   if (isCurrentMonth(entry)){
@@ -82,14 +83,14 @@ entryRouter.post('/', async (request, response, next) => {
   const entry = { ...request.body}
     const newentry = new Entry(entry)
     const savedentry = await newentry.save()
-    calculateSavings(savedentry)
+    await calculateSavings(savedentry)
     response.status(201).json(savedentry)
 })
 
 entryRouter.delete('/:id', async (request, response) => {
   const entryId = request.params.id
   const entryToRemove = await Entry.findByIdAndRemove(entryId)
-  calculateSavings(entryToRemove)
+  await calculateSavings(entryToRemove)
   response.status(204).end()
 })
 
@@ -101,7 +102,7 @@ entryRouter.put('/:id', async (request, response) => {
   const existingEntry = await Entry.findById(entryId)
   console.log("Received entry: ",entry)
   const updatedentry = await Entry.findByIdAndUpdate(entryId, entry)
-  calculateSavings(updatedentry)
+  await calculateSavings(updatedentry)
   console.log("updated entry", updatedentry)
   response.status(201).send(updatedentry)
 })
