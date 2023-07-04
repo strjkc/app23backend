@@ -36,7 +36,7 @@ const getAvailableAmount = async () => {
   const sumOfExpenses = listOfExpenses.reduce((a,b) => a+b.amount, 0)
   const sumOfIncomes =  listOfIncomes.reduce((a,b) => a+b.amount, 0)
   console.log("Available amount: ", sumOfIncomes - sumOfExpenses)
-  return available = sumOfIncomes - sumOfExpenses
+  return sumOfIncomes - sumOfExpenses
 
 }
 
