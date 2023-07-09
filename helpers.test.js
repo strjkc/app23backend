@@ -1,9 +1,9 @@
 const helpers = require("./helpers");
-const entries = require("./testData");
-//The isCurrentMonth function tests wheter the current date is between the start and end date of the entry
+const {entries, allEntries} = require("./helpersUnitTestData");
 
 describe("Start year is smaller than current, end year is greater", () => {
     test("startYear: current; startMonth: current, endYear: 9999; endMonth: > current. result: true", () => {
+        
         const entry = entries.dateIsInYrange[0];
         expect(helpers.isCurrentMonth(entry)).toBe(true);
     });
@@ -205,3 +205,22 @@ describe("Start and end year are smaller than current", () => {
         expect(helpers.isCurrentMonth(entry)).toBe(false);
     });
 });
+
+
+//##############
+describe("test getAvailableAmount", () => {
+    test("There are more expenses than incomes", () => {
+        const availableAmount = helpers.getAvailableAmount(allEntries.moreExpThanInc);  
+        expect(availableAmount).toBe(-30);
+    });
+
+    test("There are more incomines than expenses", () => {
+        const availableAmount = helpers.getAvailableAmount(allEntries.moreIncThanExp);
+        expect(availableAmount).toBe(10);
+    });
+
+    test("The amount of expenses and incomes is equal", () => {
+        const availableAmount = helpers.getAvailableAmount(allEntries.expEqInc);
+        expect(availableAmount).toBe(0);
+    });
+})

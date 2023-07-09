@@ -387,5 +387,264 @@ const entries = {
     dateIsSmallerThanYs:[entry31, entry32, entry33, entry34, entry35, entry36, entry37, entry38, entry39]
 };
 
+const allEntries = { 
+    moreExpThanInc: [
+        {
+            name: "Plata",
+            amount: 10,
+            startDate: "2021-05",
+            endDate: "2025-01",
+            isExpense: 1,
+            frequence: 0,
+            isReocuring: true
+        },
+        {
+            name: "Plata",
+            amount: 10,
+            startDate: "2021-05",
+            endDate: "2025-12",
+            isExpense: 1,
+            frequence: 0,
+            isReocuring: true
+        },
+        {
+            name: "Plata",
+            amount: 10,
+            startDate: "2021-05",
+            endDate: "2025-07",
+            isExpense: 1,
+            frequence: 0,
+            isReocuring: true
+        },
+        {
+            name: "Plata",
+            amount: 10,
+            startDate: "2021-07",
+            endDate: "2025-07",
+            isExpense: 1,
+            frequence: 0,
+            isReocuring: true
+        },
+        {
+            name: "Plata",
+            amount: 10,
+            startDate: "2021-07",
+            endDate: "2025-01",
+            isExpense: 1,
+            frequence: 0,
+            isReocuring: true
+        },
+        {
+            name: "Plata",
+            amount: 10,
+            startDate: "2021-07",
+            endDate: "2025-12",
+            isExpense: 1,
+            frequence: 0,
+            isReocuring: true
+        },
+        {
+            name: "Plata",
+            amount: 10,
+            startDate: "2021-12",
+            endDate: "2025-07",
+            isExpense: 0,
+            frequence: 0,
+            isReocuring: true
+        },
+        {
+            name: "Plata",
+            amount: 10,
+            startDate: "2021-11",
+            endDate: "2025-12",
+            isExpense: 0,
+            frequence: 0,
+            isReocuring: true
+        },
+        {
+            name: "Plata",
+            amount: 10,
+            startDate: "2021-12",
+            endDate: "2025-01",
+            isExpense: 0,
+            frequence: 0,
+            isReocuring: true
+        }],
+    moreIncThanExp: [
+    {
+        name: "Plata",
+        amount: 10,
+        startDate: "2021-05",
+        endDate: "2025-01",
+        isExpense: 1,
+        frequence: 0,
+        isReocuring: true
+    },  
+    {
+        name: "Plata",
+        amount: 10,
+        startDate: "2021-05",
+        endDate: "2025-12",
+        isExpense: 1,
+        frequence: 0,
+        isReocuring: true
+    },
+    {
+        name: "Plata",
+        amount: 10,
+        startDate: "2021-05",
+        endDate: "2025-07",
+        isExpense: 1,
+        frequence: 0,
+        isReocuring: true
+    },
+    {
+        name: "Plata",
+        amount: 10,
+        startDate: "2021-07",
+        endDate: "2025-07",
+        isExpense: 1,
+        frequence: 0,
+        isReocuring: true
+    },
+    {
+        name: "Plata",
+        amount: 10,
+        startDate: "2021-07",
+        endDate: "2025-01",
+        isExpense: 0,
+        frequence: 0,
+        isReocuring: true
+    },
+    {
+        name: "Plata",
+        amount: 10,
+        startDate: "2021-07",
+        endDate: "2025-12",
+        isExpense: 0,
+        frequence: 0,
+        isReocuring: true
+    },
+    {
+        name: "Plata",
+        amount: 10,
+        startDate: "2021-12",
+        endDate: "2025-07",
+        isExpense: 0,
+        frequence: 0,
+        isReocuring: true
+    },
+    {
+        name: "Plata",
+        amount: 10,
+        startDate: "2021-11",
+        endDate: "2025-12",
+        isExpense: 0,
+        frequence: 0,
+        isReocuring: true
+    },
+    {
+        name: "Plata",
+        amount: 10,
+        startDate: "2021-12",
+        endDate: "2025-01",
+        isExpense: 0,
+        frequence: 0,
+        isReocuring: true
+        }],
+    expEqInc: [
+    {
+        name: "Plata",
+        amount: 10,
+        startDate: "2021-05",
+        endDate: "2025-01",
+        isExpense: 1,
+        frequence: 0,
+        isReocuring: true
+    },
+    {
+        name: "Plata",
+        amount: 10,
+        startDate: "2021-05",
+        endDate: "2025-12",
+        isExpense: 1,
+        frequence: 0,
+        isReocuring: true
+    },
+    {
+        name: "Plata",
+        amount: 10,
+        startDate: "2021-05",
+        endDate: "2025-07",
+        isExpense: 1,
+        frequence: 0,
+        isReocuring: true
+    },
+    {
+        name: "Plata",
+        amount: 10,
+        startDate: "2021-07",
+        endDate: "2025-07",
+        isExpense: 1,
+        frequence: 0,
+        isReocuring: true
+    },
+    {
+        name: "Plata",
+        amount: 10,
+        startDate: "2021-07",
+        endDate: "2025-01",
+        isExpense: 1,
+        frequence: 0,
+        isReocuring: true
+    },
+    {
+        name: "Plata",
+        amount: 10,
+        startDate: "2021-07",
+        endDate: "2025-12",
+        isExpense: 0,
+        frequence: 0,
+        isReocuring: true
+    },
+    {
+        name: "Plata",
+        amount: 10,
+        startDate: "2021-12",
+        endDate: "2025-07",
+        isExpense: 0,
+        frequence: 0,
+        isReocuring: true
+    },
+    {
+        name: "Plata",
+        amount: 10,
+        startDate: "2021-11",
+        endDate: "2025-12",
+        isExpense: 0,
+        frequence: 0,
+        isReocuring: true
+    },
+    {
+        name: "Plata",
+        amount: 10,
+        startDate: "2021-12",
+        endDate: "2025-01",
+        isExpense: 0,
+        frequence: 0,
+        isReocuring: true
+    },
+    {
+        name: "Plata",
+        amount: 10,
+        startDate: "2021-12",
+        endDate: "2025-01",
+        isExpense: 0,
+        frequence: 0,
+        isReocuring: true
+    }
+    ]
+};
 
-module.exports = entries;
+
+module.exports = {entries, allEntries};
